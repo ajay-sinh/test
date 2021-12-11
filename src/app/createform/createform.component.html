@@ -3,10 +3,7 @@
     <div class="formDiv">
         <div class="titleFont">Enter Product Info  <i (click)="close()" class="fa fa-window-close" aria-hidden="true"></i>
         </div>
-
         <form class="FormClass" [formGroup]="productDetails" (ngSubmit)="onSubmit()">
-
-
             <div class="field padding-bottom--24 algFx">
                 <p>Product Name <span class="req"> * required</span> </p>
                 <input type="text" name="email" formControlName="product_name" required />
@@ -15,35 +12,27 @@
                     Product Name is required.
                 </div>
             </div>
-
-
             <div class="field padding-bottom--24 algFx">
                 <p>Price  <span class="req"> * required</span></p>
                 <input type="number" name="email" formControlName="price" />
                 <div *ngIf="productDetails.get('price')?.invalid &&productDetails.get('price')?.touched"
                     class="alert alert-danger">
                     Price is required.
-
                 </div>
             </div>
-
             <div class="field padding-bottom--24 algFx">
                 <p>Quantity  <span class="req"> * required</span></p>
                 <input type="text" name="email" formControlName="quantity" />
                 <div *ngIf="productDetails.get('quantity')?.invalid && productDetails.get('quantity')?.touched"
                     class="alert alert-danger">
                     Quantity is required.
-
                 </div>
             </div>
-
             <div class="field padding-bottom--24 algFx">
                 <p>Discretion  <span class="req"> * optional</span></p>
                 <textarea id="w3review" formControlName="description" name="w3review" rows="4" cols="50">
-  </textarea>
-
+                </textarea>
             </div>
-
             <div class="btnHolder" *ngIf="!record">
                 <span> <button href="#" class="button" [disabled]="productDetails.invalid"
                         (click)="onSubmit()">Submit</button></span>

@@ -7,14 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from "@angular/material/dialog";
 import { HomeComponent } from './home/home.component';
 import { CreateformComponent } from './createform/createform.component';
-import { ViewComponent } from './view/view.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CreateformComponent,
-    ViewComponent
   ],
   imports: [
     BrowserModule,
