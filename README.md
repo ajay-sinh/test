@@ -28,4 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-create simple UI and maitain one observable of behaviour subject type that will maintain all crud operations 
+1)create simple UI and maitain one observable of behaviour subject type that will maintain all crud operations 
+2)public git Repo:https://github.com/ajay-sinh/upwork-Test
+3)
