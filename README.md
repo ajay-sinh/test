@@ -224,7 +224,8 @@ vi)home.component.scss
   }
  
  vii) home.component.ts
- import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { BehaviorSubject } from 'rxjs';
 import { CreateformComponent } from '../createform/createform.component';
@@ -318,6 +319,8 @@ viii) createform.component.html
     </div>
 </div>
 ix)  createform.component.scss
+
+
 .navBar p {
     font-size: 2rem;
     margin-left: 2rem;
@@ -430,7 +433,7 @@ height: 100px;
 
   x)createform.component.ts
 
-  import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DataService } from '../Services/data.service';
@@ -476,6 +479,8 @@ export class CreateformComponent implements OnInit {
 }
 
 xi)data.servic.ts
+
+
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
