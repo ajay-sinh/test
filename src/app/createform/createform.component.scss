@@ -1,0 +1,109 @@
+.navBar p {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  .formDiv{
+      width: 90%;
+      margin: 0 auto;
+  }
+  .FormClass{
+      margin-top: 30px;
+  }
+  .FormClass span{
+   margin-right: 20px;
+  }
+.req{
+  color: rgb(238, 107, 107);
+}
+  .field input {
+    font-size: 16px;
+    line-height: 12px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    min-height:30px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+.algFx{
+    display: flex;
+    flex-direction: column;   
+}
+.algFx p{
+ margin-top: 10px;
+}
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0cf;
+      border-radius: 10rem;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(#0cf, 15%);
+      transition: all .3s;
+      border-radius: 10rem;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+  
+  .btnHolder{
+ width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+  }
+  .btnHolder button{
+   border: none;
+  }
+  .titleFont{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+
+  .alert-danger{
+    margin-top: 5px;
+    margin-right: 10px;
+  color: rgb(224, 52, 52);
+
+  }
+  .titleFont i{
+ cursor: pointer;
+ font-size: 2rem;
+  }

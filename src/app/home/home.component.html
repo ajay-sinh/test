@@ -1,0 +1,40 @@
+<div class="mainPage">
+    <div class="navBar">
+        <p> Daily Drinks</p>
+    </div>
+
+    <div class="btnOfcrete">
+        <div class="btnHolder">
+            <span class="button" (click)="openAddProductPopup()">Create Entry</span>
+        </div>
+    </div>
+    <div class="productList">
+        <div class="tableProducts">
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>quantity</th>
+                    <th>Actions</th>
+
+                </tr>
+                <tr *ngFor="let record of tableData$.value;let i = index">
+                    <td>{{record?.product_name}}</td>
+                    <td>{{record?.price |currency:"INR":"symbol"}}</td>
+                    <td>{{record?.description}}</td>
+                    <td>{{record?.quantity}}</td>
+                    <th class="actionAlg">
+                        <span class="cardAction cp">
+                            <i class="fa fa-trash-o" (click)="deleteProduct(i)"aria-hidden="true"></i>
+                            <i class="fa fa-pencil" (click)="updateProduct(record,i)" aria-hidden="true"></i>
+                        </span>
+                    </th>
+
+
+            </table>
+
+        </div>
+
+    </div>
+</div>
